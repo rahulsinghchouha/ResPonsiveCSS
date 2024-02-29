@@ -1,0 +1,79 @@
+.container{
+  width: 1200px;
+  ove
+}
+.skillContainer {
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+  }
+  
+  .leftSkillContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .skillHeading {
+    color: #e84949;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  
+  .skillHeading span {
+    font-size: 90px;
+  }
+  
+  .skillSubHeading {
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+  }
+  .skillSubHeading p {
+    margin: 15px 0;
+  }
+  .rightSkillContainer {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .blobStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: blobAnimation 3s linear infinite;
+  }
+  
+  @keyframes blobAnimation {
+    50% {
+      top: 54%;
+      left: 46%;
+    }
+  }
+  
+  .skillsLogo {
+    width: 80px;
+    transition: all 0.5s;
+  }
+  
+  .skillsLogo:hover {
+    transform: scale(1.2);
+  }
+  
+  .skillFadedText {
+    font-size: 12em;
+    right: -9%;
+    bottom: -35%;
+    user-select: none;
+    color: #e7e7e7;
+    font-weight: bold;
+  }
